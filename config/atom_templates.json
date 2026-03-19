@@ -1,0 +1,78 @@
+{
+  "simple_project": {
+    "complexity": "simple",
+    "roles": [
+      {
+        "name": "全栈执行者",
+        "atoms": ["Ql", "A", "L", "Vt", "D", "O"],
+        "responsibilities": "单人完成轻量质检→任务承接→编码→测试→交付→迭代",
+        "output": "《轻量质检报告》《效能KPI报告》"
+      }
+    ],
+    "atom_meanings": {
+      "Ql": "轻量品控（聚合Qa+Qp+Vt）",
+      "A": "任务承接",
+      "L": "逻辑编码",
+      "Vt": "测试验证",
+      "D": "开源交付",
+      "O": "迭代优化"
+    }
+  },
+  "medium_project": {
+    "complexity": "medium",
+    "roles": [
+      {
+        "name": "需求分析师",
+        "atoms": ["I", "T", "K"],
+        "responsibilities": "收集需求、本质翻译、量化需求精准度",
+        "output": "《痛点清单》《任务清单》《需求KPI报告》"
+      },
+      {
+        "name": "校准验证师",
+        "atoms": ["C", "V", "F", "K"],
+        "responsibilities": "校准方向、MVS迭代、反馈聚类、KPI量化",
+        "output": "《校准报告》《测试反馈》《Top3诉求》《需求KPI报告》"
+      }
+    ],
+    "atom_meanings": {
+      "I": "需求洞察",
+      "T": "需求翻译",
+      "C": "研发校准",
+      "V": "试错验证",
+      "F": "反馈反哺",
+      "K": "KPI反馈"
+    }
+  },
+  "complex_project": {
+    "complexity": "complex",
+    "roles": [
+      {
+        "name": "项目质检官",
+        "atoms": ["Qa", "Qp", "Vt", "Ki"],
+        "responsibilities": "参与需求评审→架构设计→过程审计→测试验收",
+        "output": "《全流程质检报告》《效能KPI报告》"
+      },
+      {
+        "name": "模块开发工程师",
+        "atoms": ["A", "L", "Ki"],
+        "responsibilities": "承接任务、编码实现",
+        "output": "《开发手册》《效能KPI报告》"
+      },
+      {
+        "name": "开源交付专员",
+        "atoms": ["D", "Ki"],
+        "responsibilities": "GitHub交付、维护文档、收集外部反馈",
+        "output": "《GitHub仓库链接》《效能KPI报告》"
+      }
+    ],
+    "atom_meanings": {
+      "Qa": "需求架构质检",
+      "Qp": "开发过程品控",
+      "Vt": "测试验证",
+      "Ki": "KPI量化",
+      "A": "任务承接",
+      "L": "逻辑编码",
+      "D": "开源交付"
+    }
+  }
+}

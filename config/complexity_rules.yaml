@@ -1,0 +1,30 @@
+# 复杂度判断规则配置
+# 根据任务数、风险评分、历史返工率判断项目复杂度
+
+# 简单项目：任务少、风险低、返工少
+simple:
+  max_tasks: 5
+  max_risk_score: 0.3
+  max_rework_rate: 0.1
+  description: "任务少、风险低，适合轻量级处理"
+  
+# 中等项目
+medium:
+  max_tasks: 15
+  max_risk_score: 0.6
+  max_rework_rate: 0.2
+  min_tasks: 6
+  description: "中等规模，需要专业分工"
+
+# 复杂项目
+complex:
+  min_tasks: 16
+  min_risk_score: 0.6
+  min_rework_rate: 0.2
+  description: "大规模、高风险，需要完整原子链"
+
+# 风险等级说明
+risk_levels:
+  low: 0.0-0.3
+  medium: 0.3-0.6
+  high: 0.6-1.0

@@ -1,0 +1,26 @@
+{
+  "simple": {
+    "max_tasks": 5,
+    "max_risk_score": 0.3,
+    "max_rework_rate": 0.1,
+    "description": "任务少、风险低，适合轻量级处理"
+  },
+  "medium": {
+    "min_tasks": 6,
+    "max_tasks": 15,
+    "max_risk_score": 0.6,
+    "max_rework_rate": 0.2,
+    "description": "中等规模，需要专业分工"
+  },
+  "complex": {
+    "min_tasks": 16,
+    "min_risk_score": 0.6,
+    "min_rework_rate": 0.2,
+    "description": "大规模、高风险，需要完整原子链"
+  },
+  "risk_levels": {
+    "low": "0.0-0.3",
+    "medium": "0.3-0.6",
+    "high": "0.6-1.0"
+  }
+}
